@@ -1,0 +1,84 @@
+/* Menu bar */
+"settings" = "Settings…";
+"quit" = "Quit LynxiTime";
+"show-seconds" = "Show Seconds";
+"24h" = "24-Hour Time";
+"show-background" = "Show Background";
+"auto-hide" = "Hide When Menu Bar Is Visible";
+"auto-hide.hint" = "On each display, LynxiTime hides its clock while the system menu bar clock is visible (normal desktop) and shows it again in full-screen spaces or when the menu bar is hidden.";
+"per-app-memory" = "Remember Position Per App";
+"per-app-hint" = "Drag the clock while %@ is frontmost to auto-save its spot; full-screen and windowed are remembered separately.";
+"app-positions" = "Per-App Positions";
+"app-position-custom" = "Custom position";
+"app-position-clear" = "Remove this app's saved position";
+"slot-fullscreen" = "Full screen: %@";
+"slot-windowed" = "Windowed: %@";
+"position" = "Position";
+"displays" = "Displays";
+"window-level" = "Window Level";
+"level.normal" = "Normal";
+"level.floating" = "Floating";
+"level.overFullScreen" = "Above Full-Screen Apps";
+"dock-icon" = "Show Dock Icon";
+"launch" = "Launch at Login";
+"launch-failed" = "Could not change “Launch at Login”.";
+"ok" = "OK";
+
+/* Position presets */
+"topLeading" = "Top Left";
+"topCenter" = "Top Center";
+"topTrailing" = "Top Right";
+"leadingCenter" = "Middle Left";
+"center" = "Center";
+"trailingCenter" = "Middle Right";
+"bottomLeading" = "Bottom Left";
+"bottomCenter" = "Bottom Center";
+"bottomTrailing" = "Bottom Right";
+"custom-position" = "Custom position";
+"reset-position" = "Reset Position";
+"enabled" = "Enabled";
+
+/* Settings tabs */
+"tab.general" = "General";
+"tab.appearance" = "Appearance";
+"tab.position" = "Position & Displays";
+
+/* Appearance */
+"applies-to" = "Applies To";
+"all-displays" = "All Displays (Shared)";
+"independent-appearance" = "Independent Appearance";
+"independent-hint" = "When enabled, this display uses its own time format, font and colors instead of the shared appearance.";
+"time-format" = "Time Format";
+"show-date" = "Show Date";
+"show-weekday" = "Show Weekday";
+"format-presets" = "Presets";
+"preview" = "Preview";
+"custom-format" = "Custom Format";
+"custom-format.help" = "Pattern example: EEEE HH:mm:ss — HH: hour, mm: minute, ss: second, EEEE: weekday, yyyy: year, MMM: month, d: day.";
+"font" = "Font";
+"font.custom" = "Custom…";
+"choose-font" = "Choose Font…";
+"font-size" = "Font Size";
+"text-opacity" = "Text Opacity";
+"text-color" = "Text Color";
+"background" = "Background";
+"color" = "Color";
+"color.auto" = "Automatic";
+"color.black" = "Black";
+"color.white" = "White";
+"color.gray" = "Gray";
+"color.red" = "Red";
+"color.orange" = "Orange";
+"color.amber" = "Amber";
+"color.yellow" = "Yellow";
+"color.green" = "Green";
+"color.teal" = "Teal";
+"color.cyan" = "Cyan";
+"color.blue" = "Blue";
+"color.indigo" = "Indigo";
+"color.purple" = "Purple";
+"color.pink" = "Pink";
+"color.brown" = "Brown";
+"background-opacity" = "Background Opacity";
+"corner-radius" = "Corner Radius";
+"drag-hint" = "Tip: drag the clock directly to place it anywhere on a display.";

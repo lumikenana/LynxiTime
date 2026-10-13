@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:LynxiTime}",
+            "name": "Debug LynxiTime",
+            "target": "LynxiTime",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug LynxiTime"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:LynxiTime}",
+            "name": "Release LynxiTime",
+            "target": "LynxiTime",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release LynxiTime"
+        }
+    ]
+}

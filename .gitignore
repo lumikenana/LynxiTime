@@ -1,0 +1,14 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+
+# 构建产物
+dist/
+
+# make_icon.sh 生成的中间文件（由 AppIconSource.png 重新生成）
+Assets/AppIcon_1024.png
+
+# macOS
+.DS_Store

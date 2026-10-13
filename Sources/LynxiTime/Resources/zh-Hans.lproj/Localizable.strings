@@ -1,0 +1,84 @@
+/* 菜单栏 */
+"settings" = "设置…";
+"quit" = "退出 LynxiTime";
+"show-seconds" = "显示秒";
+"24h" = "24 小时制";
+"show-background" = "显示背景";
+"auto-hide" = "菜单栏可见时隐藏";
+"auto-hide.hint" = "每块屏幕单独生效：系统菜单栏时钟可见时（普通桌面）自动隐藏该处时钟，进入全屏或菜单栏隐藏时自动恢复显示。";
+"per-app-memory" = "按应用记忆位置";
+"per-app-hint" = "「%@」前台时拖动时钟落位，即自动记住它的位置；全屏 / 普通窗口分别记忆。";
+"app-positions" = "应用专属位置";
+"app-position-custom" = "自定义位置";
+"app-position-clear" = "清除该应用的专属位置";
+"slot-fullscreen" = "全屏：%@";
+"slot-windowed" = "窗口：%@";
+"position" = "位置";
+"displays" = "显示器";
+"window-level" = "窗口层级";
+"level.normal" = "普通";
+"level.floating" = "悬浮置顶";
+"level.overFullScreen" = "覆盖全屏 App";
+"dock-icon" = "显示 Dock 图标";
+"launch" = "开机启动";
+"launch-failed" = "无法更改“开机启动”设置。";
+"ok" = "好";
+
+/* 位置预设 */
+"topLeading" = "左上角";
+"topCenter" = "顶部居中";
+"topTrailing" = "右上角";
+"leadingCenter" = "左边缘居中";
+"center" = "正中央";
+"trailingCenter" = "右边缘居中";
+"bottomLeading" = "左下角";
+"bottomCenter" = "底部居中";
+"bottomTrailing" = "右下角";
+"custom-position" = "自定义位置";
+"reset-position" = "重置位置";
+"enabled" = "启用";
+
+/* 设置标签页 */
+"tab.general" = "通用";
+"tab.appearance" = "外观";
+"tab.position" = "位置与显示器";
+
+/* 外观 */
+"applies-to" = "应用于";
+"all-displays" = "所有显示器（统一）";
+"independent-appearance" = "使用独立外观";
+"independent-hint" = "开启后，这块屏幕使用自己的时间格式、字体与颜色，不再跟随统一外观。";
+"time-format" = "时间格式";
+"show-date" = "显示日期";
+"show-weekday" = "显示星期";
+"format-presets" = "内置格式";
+"preview" = "预览";
+"custom-format" = "自定义格式";
+"custom-format.help" = "格式示例：EEEE HH:mm:ss——HH 小时、mm 分、ss 秒、EEEE 星期、yyyy 年、MMM 月、d 日。";
+"font" = "字体";
+"font.custom" = "自定义…";
+"choose-font" = "选择字体…";
+"font-size" = "字号";
+"text-opacity" = "文字透明度";
+"text-color" = "文字颜色";
+"background" = "背景";
+"color" = "颜色";
+"color.auto" = "跟随系统";
+"color.black" = "黑色";
+"color.white" = "白色";
+"color.gray" = "灰色";
+"color.red" = "红色";
+"color.orange" = "橙色";
+"color.amber" = "琥珀色";
+"color.yellow" = "黄色";
+"color.green" = "绿色";
+"color.teal" = "青色";
+"color.cyan" = "天蓝色";
+"color.blue" = "蓝色";
+"color.indigo" = "靛蓝色";
+"color.purple" = "紫色";
+"color.pink" = "粉色";
+"color.brown" = "棕色";
+"background-opacity" = "背景不透明度";
+"corner-radius" = "圆角";
+"drag-hint" = "提示：直接拖动时钟，可将它放到任意一块屏幕的任意位置。";
