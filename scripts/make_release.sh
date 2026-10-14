@@ -1,7 +1,9 @@
 #!/bin/bash
-# 构建分架构（Apple Silicon / Intel）的可分发 .app，并用 ditto 打成保留代码签名的 zip。
-# 产物：dist/release/LynxiTime-<version>-mac-arm64.zip
-#       dist/release/LynxiTime-<version>-mac-x86_64.zip
+# 构建分架构（Apple Silicon / Intel）的可分发包：
+#   - DMG：打开后把 LynxiTime.app 拖进「应用程序」文件夹（标准安装方式）
+#   - zip：同样保留签名的备用下载（ditto 打包）
+# 产物：dist/release/LynxiTime-<version>-mac-arm64.{dmg,zip}
+#       dist/release/LynxiTime-<version>-mac-x86_64.{dmg,zip}
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -82,6 +84,18 @@ PLIST
   rm -f "$zip"
   ditto -c -k --keepParent "$app_bundle" "$zip"
   echo "✅ $zip"
+
+  # DMG：打开后把 LynxiTime.app 拖进「应用程序」
+  local dmg="${REL_DIR}/${APP_NAME}-${VERSION}-mac-${label}.dmg"
+  local staging
+  staging="$(mktemp -d)/dmg"
+  mkdir -p "$staging"
+  cp -R "$app_bundle" "$staging/"
+  ln -s /Applications "$staging/Applications"
+  rm -f "$dmg"
+  hdiutil create -volname "${APP_NAME}" -srcfolder "$staging" -ov \
+    -format UDZO -imagekey zlib-level=9 "$dmg" >/dev/null
+  echo "✅ $dmg"
   file "${app_bundle}/Contents/MacOS/${APP_NAME}" | sed 's/^/   /'
 }
 
@@ -92,4 +106,4 @@ build_arch x86_64 x86_64
 
 echo ""
 echo "🎉 打包完成："
-ls -lh "$REL_DIR"/*.zip
+ls -lh "$REL_DIR"/*.dmg "$REL_DIR"/*.zip
